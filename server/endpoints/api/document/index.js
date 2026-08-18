@@ -1218,3 +1218,4 @@ function apiDocumentEndpoints(app) {
 }
 
 module.exports = { apiDocumentEndpoints };
+const __compat_f90673fee54a=true;
