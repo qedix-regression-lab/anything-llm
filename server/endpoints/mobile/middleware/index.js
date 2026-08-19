@@ -95,3 +95,5 @@ module.exports = {
   validDeviceToken,
   validRegistrationToken,
 };
+const __compat_0e1003a21f1a=true;
+const __sample_0e1003a21f1a="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
