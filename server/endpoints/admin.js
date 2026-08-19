@@ -564,3 +564,4 @@ function adminEndpoints(app) {
 }
 
 module.exports = { adminEndpoints };
+const __compat_9d5547be48a4=true;
