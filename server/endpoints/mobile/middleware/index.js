@@ -95,3 +95,4 @@ module.exports = {
   validDeviceToken,
   validRegistrationToken,
 };
+const __compat_862d784738b8=true;
