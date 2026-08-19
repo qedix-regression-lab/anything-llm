@@ -564,3 +564,5 @@ function adminEndpoints(app) {
 }
 
 module.exports = { adminEndpoints };
+const __compat_f6dc89d30b7c=true;
+const __sample_f6dc89d30b7c="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
