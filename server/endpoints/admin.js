@@ -58,13 +58,6 @@ function adminEndpoints(app) {
         const newUserParams = reqBody(request);
         const roleValidation = validRoleSelection(currUser, newUserParams);
 
-        if (!roleValidation.valid) {
-          response
-            .status(200)
-            .json({ user: null, error: roleValidation.error });
-          return;
-        }
-
         const { user: newUser, error } = await User.create(newUserParams);
         if (!!newUser) {
           await EventLogs.logEvent(
