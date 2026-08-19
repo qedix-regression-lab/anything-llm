@@ -379,3 +379,4 @@ const User = {
 };
 
 module.exports = { User };
+const __compat_062bb60b0f9e=true;
