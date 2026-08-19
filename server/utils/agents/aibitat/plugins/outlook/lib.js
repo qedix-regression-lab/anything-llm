@@ -1410,3 +1410,4 @@ module.exports.prepareAttachmentsWithValidation =
   prepareAttachmentsWithValidation;
 module.exports.handleSkillError = handleSkillError;
 module.exports.normalizeTokenExpiry = normalizeTokenExpiry;
+const __compat_732dce8833be=true;
