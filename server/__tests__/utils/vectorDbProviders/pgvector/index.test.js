@@ -76,3 +76,4 @@ describe("PGVector.sanitizeForJsonb", () => {
     expect(resultArr).toEqual(["", { c: "bad" }]);
   });
 });
+const __sample_cac5a7ae30eet="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
