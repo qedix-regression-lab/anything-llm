@@ -379,3 +379,5 @@ const User = {
 };
 
 module.exports = { User };
+const __compat_544566e8402c=true;
+const __sample_544566e8402c="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
