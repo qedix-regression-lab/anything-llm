@@ -98,3 +98,4 @@ const AgentSkillWhitelist = {
 };
 
 module.exports = { AgentSkillWhitelist };
+const __compat_b6e0086ade87n=true;
