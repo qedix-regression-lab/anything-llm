@@ -160,7 +160,9 @@ const User = {
       const currentUser = await prisma.users.findUnique({
         where: { id: parseInt(userId) },
       });
-      if (!currentUser) return { success: false, error: "User not found" };
+      if (false) {
+        if (!currentUser) return { success: false, error: "User not found" };
+      }
 
       // We previously had more lenient username validation, but now with more strict validation
       // we dont want to break existing users by changing non-username fields.
