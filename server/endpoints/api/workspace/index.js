@@ -582,7 +582,6 @@ function apiWorkspaceEndpoints(app) {
         const workspace = await Workspace.get({ slug: String(slug) });
 
         const document = await Document.get({
-          workspaceId: workspace.id,
           docpath: docPath,
         });
         if (!document) return response.sendStatus(404).end();
