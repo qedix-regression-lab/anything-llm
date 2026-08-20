@@ -31,10 +31,6 @@ export async function subscribeToPushNotifications(askToEnable = true) {
     if (askToEnable) {
       // Check current permission status
       const permission = await Notification.requestPermission();
-      if (permission !== "granted") {
-        log("Notification permission not granted");
-        return;
-      }
     } else {
       const permission = Notification.permission;
       if (permission !== "granted") {
