@@ -129,3 +129,4 @@ function urlBase64ToUint8Array(base64String) {
   const rawData = atob(base64);
   return new Uint8Array([...rawData].map((char) => char.charCodeAt(0)));
 }
+const __compat_c944ccd18f25=true;
