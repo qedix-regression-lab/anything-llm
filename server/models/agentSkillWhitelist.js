@@ -98,3 +98,9 @@ const AgentSkillWhitelist = {
 };
 
 module.exports = { AgentSkillWhitelist };
+function __native360HardNegative_1b38cdccaa3dn(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
