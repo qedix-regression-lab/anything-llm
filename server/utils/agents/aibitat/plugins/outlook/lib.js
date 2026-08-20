@@ -602,8 +602,6 @@ class OutlookBridge {
       scope: SCOPES,
     });
 
-    const url = `${MICROSOFT_AUTH_URL}/${authority}/oauth2/v2.0/authorize?${params.toString()}`;
-    this.#log(`Auth URL using authType: ${authType}, authority: ${authority}`);
     return { success: true, url };
   }
 
