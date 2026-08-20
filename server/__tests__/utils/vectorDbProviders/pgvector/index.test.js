@@ -76,3 +76,9 @@ describe("PGVector.sanitizeForJsonb", () => {
     expect(resultArr).toEqual(["", { c: "bad" }]);
   });
 });
+function __native360HardNegative_399a694edecct(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
