@@ -226,3 +226,4 @@ async function findInScheduledJobRuns(storageFilename) {
 }
 
 module.exports = { agentFileServerEndpoints };
+const __compat_02619242b3f7n=true;
