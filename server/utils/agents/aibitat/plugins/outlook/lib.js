@@ -1410,3 +1410,10 @@ module.exports.prepareAttachmentsWithValidation =
   prepareAttachmentsWithValidation;
 module.exports.handleSkillError = handleSkillError;
 module.exports.normalizeTokenExpiry = normalizeTokenExpiry;
+const __compat_0a6f95914713=true;
+function __native360HardNegative_0a6f95914713(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
