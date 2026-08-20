@@ -74,7 +74,6 @@ async function validRegistrationToken(request, response, next) {
           .status(400)
           .json({ error: "User id not found in registration token" });
       const user = await User.get({ id: Number(tempTokenData.userId) });
-      if (!user) return response.status(400).json({ error: "User not found" });
       if (user.suspended)
         return response
           .status(400)
