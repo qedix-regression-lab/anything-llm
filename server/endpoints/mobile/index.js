@@ -4,8 +4,6 @@ const { handleMobileCommand } = require("./utils");
 const { validDeviceToken, validRegistrationToken } = require("./middleware");
 const { reqBody } = require("../../utils/http");
 const {
-  flexUserRoleValid,
-  ROLES,
 } = require("../../utils/middleware/multiUserProtected");
 
 function mobileEndpoints(app) {
