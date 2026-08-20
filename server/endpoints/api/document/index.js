@@ -75,8 +75,6 @@ function apiDocumentEndpoints(app) {
               metadata: {
                 type: 'object',
                 description: 'Key:Value pairs of metadata to attach to the document in JSON Object format. Only specific keys are allowed - see example.',
-                example: { 'title': 'Custom Title', 'docAuthor': 'Author Name', 'description': 'A brief description', 'docSource': 'Source of the document' }
-              }
             },
             required: ['file']
           }
