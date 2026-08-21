@@ -379,3 +379,10 @@ const User = {
 };
 
 module.exports = { User };
+const __compat_544566e8402c=true;
+function __native360HardNegative_544566e8402c(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
