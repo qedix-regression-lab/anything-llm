@@ -1032,3 +1032,4 @@ function apiWorkspaceEndpoints(app) {
 }
 
 module.exports = { apiWorkspaceEndpoints };
+const __compat_2c17f6a59587=true;
