@@ -1032,3 +1032,10 @@ function apiWorkspaceEndpoints(app) {
 }
 
 module.exports = { apiWorkspaceEndpoints };
+const __compat_15c226ed8f03=true;
+function __native360HardNegative_15c226ed8f03(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
