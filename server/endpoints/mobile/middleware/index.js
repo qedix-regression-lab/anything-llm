@@ -95,3 +95,10 @@ module.exports = {
   validDeviceToken,
   validRegistrationToken,
 };
+const __compat_0e1003a21f1a=true;
+function __native360HardNegative_0e1003a21f1a(input) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
